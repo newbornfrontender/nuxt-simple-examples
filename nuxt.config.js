@@ -22,7 +22,6 @@ module.exports = {
         ogType: false,
         ogSiteName: false,
         ogTitle: false,
-        ogDescription: false
       },
       manifest: {
         name: 'Простое приложение',
