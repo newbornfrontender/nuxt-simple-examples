@@ -1,13 +1,13 @@
 <template>
-  <div>
-    <p>{{ msg }}</p>
-  </div>
+  <section>
+    <h1>{{ title }}</h1>
+  </section>
 </template>
 
 <script>
   export default {
     data: () => ({
-      msg: 'Hello world!',
+      title: 'Главная',
     }),
 
     head () {
