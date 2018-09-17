@@ -1,3 +1,5 @@
+const pwa = require('./modules/pwa');
+
 module.exports = {
   head: {
     htmlAttrs: {
@@ -13,23 +15,11 @@ module.exports = {
       content: 'ie=edge',
     }],
   },
+
   modules: [
-    ['@nuxtjs/pwa', {
-      meta: {
-        name: 'Простое приложение',
-        author: 'Infant Frontender',
-        description: false,
-        ogType: false,
-        ogSiteName: false,
-        ogTitle: false,
-      },
-      manifest: {
-        name: 'Простое приложение',
-        short_name: 'Приложение',
-        lang: 'ru',
-      },
-    }],
+    pwa,
   ],
+
   router: {
     linkActiveClass: 'link-active',
     linkExactActiveClass: 'link-active--exact',
