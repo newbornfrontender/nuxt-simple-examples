@@ -1,0 +1,8 @@
+{
+  "name": "nuxt-simple-examples",
+  "version": "1.0.0",
+  "description": "Простые примеры на Nuxt",
+  "repository": "https://github.com/newbornfrontender/nuxt-simple-examples.git",
+  "author": "Infant Frontender <newbornfrontender@gmail.com>",
+  "license": "MIT"
+}
