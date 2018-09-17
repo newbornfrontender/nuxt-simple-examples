@@ -13,5 +13,8 @@
   "license": "MIT",
   "devDependencies": {
     "nuxt": "^1.4.2"
+  },
+  "dependencies": {
+    "@nuxtjs/pwa": "^2.5.0"
   }
 }
