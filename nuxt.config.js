@@ -13,6 +13,24 @@ module.exports = {
       content: 'ie=edge',
     }],
   },
+  modules: [
+    ['@nuxtjs/pwa', {
+      meta: {
+        name: 'Простое приложение',
+        author: 'Infant Frontender',
+        description: false,
+        ogType: false,
+        ogSiteName: false,
+        ogTitle: false,
+        ogDescription: false
+      },
+      manifest: {
+        name: 'Простое приложение',
+        short_name: 'Приложение',
+        lang: 'ru',
+      },
+    }],
+  ],
   router: {
     linkActiveClass: 'link-active',
     linkExactActiveClass: 'link-active--exact',
