@@ -2,6 +2,12 @@
   "name": "nuxt-simple-examples",
   "version": "1.0.0",
   "description": "Простые примеры на Nuxt",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
   "repository": "https://github.com/newbornfrontender/nuxt-simple-examples.git",
   "author": "Infant Frontender <newbornfrontender@gmail.com>",
   "license": "MIT",
