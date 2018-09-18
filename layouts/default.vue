@@ -9,15 +9,13 @@
 </template>
 
 <script>
-  import MainPageHeader from '~/components/MainPageHeader';
-  import MainPageContent from '~/components/MainPageContent';
-  import MainPageFooter from '~/components/MainPageFooter';
-
   export default {
+    name: 'layout-default',
+
     components: {
-      MainPageHeader,
-      MainPageContent,
-      MainPageFooter,
+      'main-page-header': () => import('~/components/main-page-header'),
+      'main-page-content': () => import('~/components/main-page-content'),
+      'main-page-footer': () => import('~/components/main-page-footer'),
     },
   };
 </script>
