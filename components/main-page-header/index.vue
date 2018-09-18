@@ -5,11 +5,13 @@
 </template>
 
 <script>
+  import NavList from './nav-list';
+
   export default {
     name: 'component-main-page-header',
 
     components: {
-      'nav-list': () => import('~/components/nav-list'),
+      NavList,
     },
   };
 </script>

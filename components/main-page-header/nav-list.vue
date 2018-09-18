@@ -5,6 +5,8 @@
 </template>
 
 <script>
+  import ItemsList from '~/components/items-list';
+
   export default {
     name: 'component-nav-list',
 
@@ -19,7 +21,7 @@
     }),
 
     components: {
-      'items-list': () => import('~/components/items-list'),
+      ItemsList,
     },
   };
 </script>
