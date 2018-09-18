@@ -1,15 +1,15 @@
 <template>
   <nav>
-    <items-list v-bind:items-list="navList" />
+    <items-list v-bind:list="list" />
   </nav>
 </template>
 
 <script>
-  import ItemsList from '~/components/ItemsList';
-
   export default {
+    name: 'component-nav-list',
+
     data: () => ({
-      navList: [{
+      list: [{
         title: 'Главная',
         path: '/',
       }, {
@@ -19,7 +19,7 @@
     }),
 
     components: {
-      ItemsList,
+      'items-list': () => import('~/components/items-list'),
     },
   };
 </script>
