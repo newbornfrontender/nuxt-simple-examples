@@ -6,6 +6,8 @@
 
 <script>
   export default {
+    name: 'page-counter',
+
     data: () => ({
       title: 'Счетчик',
     }),
