@@ -1,6 +1,10 @@
 <template>
   <section>
     <h1>{{ title }}</h1>
+
+    <div>
+      <p>{{ counter }}</p>
+    </div>
   </section>
 </template>
 
@@ -11,6 +15,12 @@
     data: () => ({
       title: 'Главная',
     }),
+
+    computed: {
+      counter () {
+        return this.$store.state.counter;
+      },
+    },
 
     head () {
       return {
