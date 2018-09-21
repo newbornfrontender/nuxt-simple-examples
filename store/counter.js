@@ -3,13 +3,17 @@ export const state = () => ({
 });
 
 export const mutations = {
-  increment (state) {
-    state.counter++;
+  increment (state, num) {
+    num = num || 1;
+
+    state.counter += num;
   },
 
-  decrement (state) {
+  decrement (state, num) {
+    num = num || 1;
+
     if (state.counter > 0) {
-      state.counter--;
+      state.counter -= num;
     };
   },
 };
