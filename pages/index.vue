@@ -9,6 +9,8 @@
 </template>
 
 <script>
+  import { mapState } from 'vuex';
+
   export default {
     name: 'page-index',
 
@@ -16,11 +18,9 @@
       title: 'Главная',
     }),
 
-    computed: {
-      counter () {
-        return this.$store.state.counter;
-      },
-    },
+    computed: mapState({
+      counter: state => state.counter.counter,
+    }),
 
     head () {
       return {

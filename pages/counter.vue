@@ -3,7 +3,7 @@
     <h1>{{ title }}</h1>
 
     <div>
-      <p>{{ counter }}</p>
+      <p>Счетчик: {{ counter }}</p>
 
       <button v-on:click="increment">+</button>
       <button v-on:click="decrement">-</button>
@@ -21,11 +21,6 @@
       title: 'Счетчик',
     }),
 
-    // methods: mapMutations({
-    //   increment: 'counter/increment',
-    //   decrement: 'counter/decrement',
-    // }),
-
     methods: {
       increment () {
         this.$store.commit('counter/increment');
@@ -35,9 +30,9 @@
       },
     },
 
-    computed: mapState([
-      'counter',
-    ]),
+    computed: mapState({
+      counter: state => state.counter.counter,
+    }),
 
     head () {
       return {
