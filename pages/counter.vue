@@ -21,10 +21,19 @@
       title: 'Счетчик',
     }),
 
-    methods: mapMutations({
-      increment: 'counter/increment',
-      decrement: 'counter/decrement',
-    }),
+    // methods: mapMutations({
+    //   increment: 'counter/increment',
+    //   decrement: 'counter/decrement',
+    // }),
+
+    methods: {
+      increment () {
+        this.$store.commit('counter/increment');
+      },
+      decrement () {
+        this.$store.commit('counter/decrement', 3);
+      },
+    },
 
     computed: mapState([
       'counter',
