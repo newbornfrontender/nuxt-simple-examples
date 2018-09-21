@@ -1,5 +1,3 @@
-const pwa = require('./modules/pwa');
-
 module.exports = {
   head: {
     htmlAttrs: {
@@ -17,7 +15,21 @@ module.exports = {
   },
 
   modules: [
-    pwa,
+    ['@nuxtjs/pwa', {
+      meta: {
+        name: 'Простое приложение',
+        author: 'Infant Frontender',
+        description: false,
+        ogType: false,
+        ogSiteName: false,
+        ogTitle: false,
+      },
+      manifest: {
+        name: 'Простое приложение',
+        short_name: 'Приложение',
+        lang: 'ru',
+      },
+    }],
     '@nuxtjs/axios',
   ],
 
