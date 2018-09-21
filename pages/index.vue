@@ -14,7 +14,7 @@
 
     head () {
       return {
-        title: 'Главная',
+        title: this.title,
         meta: [{
           hid: 'index-description',
           name: 'description',

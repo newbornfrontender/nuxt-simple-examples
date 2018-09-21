@@ -14,7 +14,7 @@
 
     head () {
       return {
-        title: 'Счетчик',
+        title: this.title,
         meta: [{
           hid: 'counter-description',
           name: 'description',
