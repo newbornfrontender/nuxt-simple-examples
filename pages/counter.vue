@@ -26,9 +26,9 @@
       decrement: 'counter/decrement',
     }),
 
-    computed: mapState({
-      counter: 'counter',
-    }),
+    computed: mapState([
+      'counter',
+    ]),
 
     head () {
       return {
