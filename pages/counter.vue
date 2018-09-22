@@ -22,9 +22,9 @@
     }),
 
     methods: {
-      increment () {
-        this.$store.commit('counter/increment');
-      },
+      ...mapMutations([
+        'counter/increment',
+      ]),
       decrement () {
         this.$store.commit('counter/decrement', 3);
       },
